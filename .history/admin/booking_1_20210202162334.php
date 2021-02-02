@@ -21,7 +21,7 @@
 	 die();*/
 	if(isset($_POST['action']) && $_POST['action'] == "view") {
 
-		$depart = $_POST['date_depart']; rd
+		$depart = $_POST['date_depart']; 
         $arrive = $_POST['date_arrive'];
 		$date_query = "INSERT INTO `dates`(`date_departure`,`date_arrival`) VALUES('$depart','$arrive')";
 		$res= mysqli_query($connection,$date_query);
