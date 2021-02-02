@@ -1,0 +1,43 @@
+@media only screen and (min-width:900px) and (max-width:2022px) {
+.wrapper .row{
+    padding: 5px;
+}
+
+.wrapper .card{
+    font-family: 'Inconsolata', monospace;    
+}
+
+.card-header, .card-footer {
+    text-align: center;
+    background-color: transparent;
+    background-color: #888888;
+    color: white;
+    font-family: 'pacifico';
+}
+
+.card-footer a {
+    text-decoration: none;
+    color: orange;
+    padding: 5px;
+}
+
+.card-header small {
+    padding-left: 5px;
+    font-size: 15px;
+    color: orange;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-body i {
+    padding: 10px;
+    color: orange;
+}
+
+.card-body strong {
+    font-size: 18px;
+}
+
+}

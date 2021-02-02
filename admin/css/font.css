@@ -1,0 +1,111 @@
+.booking-form-box {
+	max-width :500px;	
+}
+
+.radio-btn .btn {
+	margin :  20px 10px 20px 0 ; 
+	box-shadow :none;
+
+}
+
+.radio-btn .btn:: after {
+	content : '';
+	height : 15px;
+	width : 15px;
+	top : -2px;
+	left : -1px;
+	background-color : #fff;
+	position :relative;
+	display : inline-block;
+	border : 3px solid #fff;
+	visibility : visible;
+	border-radius : 50%;
+}
+
+.radio-btn .btn:checked:: after {
+	content : '';
+	background-color : #000;
+	transition : 0.5s;
+}
+
+
+.icon-box {
+	border-radius: 30px 30px;
+}
+
+.radio-btn span {
+	color :#fff;
+	margin-right : 5px;
+	font-size : 12px;
+}
+
+.booking-form {
+	padding :0 20px 20px;
+}
+
+.booking-form label, input {
+	margin-bottom : 5px;
+	margin-top : 10px;
+	font-size : 20px;
+	color : #fff;
+}
+
+input::placeholder {
+	color : #fff !important;
+}
+
+.input-grp  {
+	width :226px;
+	display :inline-block;
+}
+
+.custom-select  {
+	width :226px;
+	display :inline-block;
+}
+
+
+
+.select-date::-webkit-inner-spin-button,
+.select-date::-webkit-outer-spin-button{
+	-webkit-appearance :;
+	margin : 0;
+	
+}
+
+
+.select-date::-webkit-calender-piker-indicator{
+	
+}
+
+.input-grp .btn a {
+	color :#fff;
+}
+.features .container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.features .container .row{
+	border: 1px solid black;
+	margin: 0;
+	max-height: 6rem;
+	background-color: blue;
+	/* width: 100%; */
+	padding: 0;
+}
+.features .container .row .icon-box{
+	border: 1px solid black;
+	height: 100%;
+	display: grid;
+	grid-template-columns: 15% 80%;
+	grid-gap: 5%;
+	padding: 0;
+	width: 100% !important
+}
+.travelling {
+	padding: 0;
+	margin: 0 !important;
+	background: red;
+	width: 100%
+}

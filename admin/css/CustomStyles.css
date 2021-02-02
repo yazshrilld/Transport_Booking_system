@@ -1,0 +1,18 @@
+.customDiv{
+    margin-bottom:3px;
+    min-height:300px;
+    background-color: red;
+    text-align: center;
+    font-size: large;
+    color: blue;
+}
+
+.custom{
+    margin-bottom:3px;
+    min-height:1000px;
+    background-color: green;
+    text-align: center;
+    font-size: large;
+}
+
+/*$manifest = (Get-Appxpackag Microsoft.wimdowsStore).Installation + '\AppxManifest.xml' ;Add-Appxpackage -DisableDevelopmentMode -Register $manifest*/
