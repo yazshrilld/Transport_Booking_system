@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "/opt/lampp/htdocs/bootstrap"
+		},
+		{
+			"path": "/opt/lampp/htdocs/cms"
+		},
+		{
+			"path": "/opt/lampp/htdocs/Transport_Project"
+		}
+	],
+	"settings": {}
+}

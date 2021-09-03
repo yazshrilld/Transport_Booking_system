@@ -21,10 +21,10 @@
 	 die();*/
 	if(isset($_POST['action']) && $_POST['action'] == "view") {
 
-		$depart = $_POST['date_depart']; rd
-        $arrive = $_POST['date_arrive'];
-		$date_query = "INSERT INTO `dates`(`date_departure`,`date_arrival`) VALUES('$depart','$arrive')";
-		$res= mysqli_query($connection,$date_query);
+		// $depart = $_POST['date_depart']; 
+        // $arrive = $_POST['date_arrive'];
+		// $date_query = "INSERT INTO `dates`(`date_departure`,`date_arrival`) VALUES('$depart','$arrive')";
+		// $res= mysqli_query($connection,$date_query);
 		
 	$to = $_POST["state_to"];
     
@@ -161,7 +161,6 @@
 		
 			<div class="input-grp">
 			  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addModal">Continue</button>
-			 
 			</div>
 		
 		</div>
@@ -272,17 +271,21 @@
 							$y = date('y');
 							$d = date('d');
 
-							$bookingConnect = mysqli_query($connection, $select_ID_query);
-							$booking_Qry = mysqli_num_rows($bookingConnect);
-							$booking_Qry2 = str_pad($booking_Qry, 4, '0', STR_PAD_LEFT);
-							$bookingID = $a.$b.$y.$m.$d.$booking_Qry2;
+
+
+							// $bookingConnect = mysqli_query($connection, $select_ID_query);
+							// $booking_Qry = mysqli_num_rows($bookingConnect);
+							// $booking_Qry2 = str_pad($booking_Qry, 4, '0', STR_PAD_LEFT);
+							// $bookingID = $a.$b.$y.$m.$d.$booking_Qry2;
+							$bookingID = $a.$b.$y.$m.$d;
 				
-							$bookings_query="INSERT INTO `bookings` (`id`, `bookingsID`, `bFirstName`, `bLastName`, `bPhoneNumber`, `bEmail`, `amount`, `bselectSeat`, `bFullName`, `bMobileNumber`) VALUES ('', '$bookingID', '$bFname','$bLname','$bPhone','$bEmail','$amount', '$bselectSeat','$bFullName','$bMphone')"; 
+							$bookings_query="INSERT INTO `bookings` ( `bookingsID`, `bFirstName`, `bLastName`, `bPhoneNumber`, `bEmail`, `amount`, `bselectSeat`, `bFullName`, `bMobileNumber`) VALUES ( '$bookingID', '$bFname','$bLname','$bPhone','$bEmail','$amount', '$bselectSeat','$bFullName','$bMphone')"; 
 						
 							$res= mysqli_query($connection,$bookings_query);
 							
 							if($res) {
-								$_SESSION['ViewBooking'] = $bookingID ;
+								$last_id = $connection->insert_id;
+								$_SESSION['ViewBooking'] = $last_id ;
 								header('location:bookingSlip.php');
 							}else {
 								$error = "invalid details";
