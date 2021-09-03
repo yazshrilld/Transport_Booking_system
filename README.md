@@ -1,4 +1,4 @@
-# Transport_Booking_system
+# Transport_Booking_syctem
 Book trips online Using PHP and MySQLi
 ### This booking system helps you book your trip with ease and you get tickets for each booking
 Please ignore the history folder, the remainimg folders and files are the main folders

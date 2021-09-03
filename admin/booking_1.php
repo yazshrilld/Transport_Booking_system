@@ -275,7 +275,7 @@
 
 							// $bookingConnect = mysqli_query($connection, $select_ID_query);
 							// $booking_Qry = mysqli_num_rows($bookingConnect);
-							// $booking_Qry2 = str_pad($booking_Qry, 4, '0', STR_PAD_LEFT);
+							// $booking_Qry2 = str_pad($booking_Qry, 4, '0', STR_PAD_LEFT)kkk;
 							// $bookingID = $a.$b.$y.$m.$d.$booking_Qry2;
 							$bookingID = $a.$b.$y.$m.$d;
 				
@@ -288,7 +288,7 @@
 								$_SESSION['ViewBooking'] = $last_id ;
 								header('location:bookingSlip.php');
 							}else {
-								$error = "invalid details provided";
+								$error = "invalid details";
 								
 							}	
 			            } 
