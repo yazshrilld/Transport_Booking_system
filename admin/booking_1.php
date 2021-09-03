@@ -288,7 +288,7 @@
 								$_SESSION['ViewBooking'] = $last_id ;
 								header('location:bookingSlip.php');
 							}else {
-								$error = "invalid details";
+								$error = "invalid details provided";
 								
 							}	
 			            } 
